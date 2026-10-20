@@ -1,0 +1,211 @@
+# Textes de l'interface en français. Les clés suivent i18n/en/ui.yml.
+name: Français
+title_prefixes: ["Le ", "La ", "Les ", "L'"]
+sections:
+  - En une ligne
+  - L'image
+  - Ce qui se passe vraiment
+  - Essayez
+  - Notes en marge
+  - Quand un agent demande
+  - Attention
+write_column: "| Écrire"
+off_world: [robot, néon, circuit, futuriste, hologramme, laser, smartphone, plastique,
+            magicien, sorcier, sorcière, magie, magique, dragon, potion, enchanté, enchantée, fée, elfe,
+            chevalier, château, épée, donjon, grotte, caverne, dinosaure, mammouth, parchemin]
+chapters:
+  1: Se repérer dans le cabinet de travail
+  2: Lire de près
+  3: Écrire et ranger
+  4: Serrures, clés et commis
+  5: Le Copie-lettres
+  6: La Poste
+  7: Brouillons et livres empruntés
+  8: Le Ménage
+  9: L'Atelier
+  10: Les Billets à l'encre rouge
+  11: Les Lettres contrefaites
+ui:
+  cover_aria: Couverture du livre
+  book_title: "Ne signez jamais à l'aveugle"
+  book_subtitle: "Le guide de Mme Finch pour les billets que votre nouveau commis vous apportera"
+  open_book: Ouvrir le livre
+  summary_table: Le tableau récapitulatif
+  continue_at: "Reprendre à {title}"
+  stamps_earned: "{n} tampons gagnés sur {total}"
+  stamps_to_earn: "{total} pages · {total} tampons à gagner"
+  open_book_aria: Le livre ouvert
+  contents: Table des matières
+  back_to_page: Retour à la page
+  close_book: Fermer le livre
+  tally: "<b>{n}</b> pages tamponnées sur <b>{total}</b>"
+  legend_aria: Ce que signifient les sceaux
+  legend_low: "Sceau à la plume : regarde seulement, rien ne change"
+  legend_medium: "Sceau à la tache d'encre : change des choses que l'on peut remettre"
+  legend_high: "Sceau de cire rouge : peut faire perdre des choses pour de bon"
+  seal_low: Sceau à la plume
+  seal_medium: Sceau à la tache d'encre
+  seal_high: Sceau de cire rouge
+  seal_note_low: Regarde seulement. Rien ne change dans le cabinet.
+  seal_note_medium: Change des choses, mais on peut les remettre.
+  seal_note_high: Peut détruire ou exposer des choses pour de bon.
+  chip_all: Tous
+  chip_low: Plume
+  chip_medium: Tache d'encre
+  chip_high: Cire rouge
+  ch_short: Chap.
+  chapter: Chapitre
+  chapter_sealed: Chapitre scellé
+  missing_page: une page encore à écrire
+  at_a_glance: D'un coup d'œil
+  summary_title: Le Tableau récapitulatif
+  summary_lede: "Toutes les commandes du livre sur une seule page : l'objet qu'elle devient dans le cabinet, ce qu'elle fait, et la prudence à garder quand un agent demande à l'exécuter."
+  search_label: Chercher une commande ou un objet
+  search_placeholder: "rm, gomme, git…"
+  seal_filter_aria: Trier par sceau
+  col_write: Écrire
+  col_object: Dans le cabinet
+  col_does: Ce qu'elle fait
+  col_seal: Sceau
+  col_stamped: Tamponnée
+  count_all: "{n} commandes en {chapters} chapitres."
+  count_some: "{n} commandes affichées sur {total}."
+  count_none: Aucune commande ne correspond. Essayez un autre mot.
+  for_practitioner: pour le praticien
+  plate: Planche
+  margin_exercise: Exercice en marge
+  understood: Compris
+  see_also: "Voir aussi :"
+  turn: tourner
+  turn_to: "Tourner vers {title}"
+  turn_page_aria: Tourner la page
+  not_quite: Pas tout à fait. Relisez l'image et essayez une autre réponse.
+  chapter_done: "Le chapitre {num} est scellé. Chaque page est comprise."
+  stamped_toast: "Tamponné. {n} pages comprises sur {total}."
+  untranslated: "Cette page n'est pas encore traduite. Voici l'original anglais."
+  cover_hint: Cliquez sur la couverture pour l'ouvrir
+  nav_plates: Les planches
+  nav_seals: Les sceaux
+  nav_shelf: Chapitres
+  stat_commands: commandes
+  stat_chapters: chapitres
+  stat_languages: langues
+  plates_title: Une gravure pour chaque commande
+  plates_lede: Chaque commande devient un objet d'un cabinet de travail vers 1900. Survolez une planche pour lire ce qu'elle fait, cliquez pour ouvrir sa page.
+  seals_title: Trois sceaux, trois degrés de prudence
+  shelf_title: Neuf volumes, du tiroir à l'atelier
+  shelf_lede: Commencez par ls et cd, finissez par make et docker. Tirez un volume pour ouvrir le livre à cet endroit.
+  os_eyebrow: Open source
+  os_title: Écrit avec des agents, tenu d'une seule main
+  os_d: La plupart des nouvelles pages sont rédigées par des agents IA. Des règles de la maison, un vérificateur et des compétences écrites gardent chaque page dans le même cabinet, le même ton et la même forme.
+  os_1: Chaque page vérifiée selon les mêmes règles
+  os_2: Chaque traduction comparée à sa page anglaise
+  os_3: Un seul monde, un cabinet vers 1900, jamais un robot
+  os_check: "{n}/{n} pages suivent les règles de la maison."
+  footer_l: "Ne signez jamais à l'aveugle · open source"
+  footer_r: Votre progression reste dans ce navigateur.
+  tale_slips: Les billets que Hobbs apporte dans ce chapitre
+  nav_how: "Le conte"
+  nav_game: "Le jeu"
+  hero_eyebrow: "Un conte en onze chapitres, et un manuel de la ligne de commande"
+  hero_title: "Un nouveau commis s'est installé <em>dans votre cabinet.</em>"
+  hero_lede: "Il s'appelle Hobbs. Il est vif, infatigable et ne demande qu'à bien faire. Toute la journée, il glisse des billets sur votre bureau, <code>ls</code>, <code>git push</code>, <code>rm -rf</code>, et attend votre signature. Le livre de cuir de Mme Finch vous dit ce que chacun fait vraiment."
+  story_eyebrow: "Le conte"
+  story_title: "Tout commence par une lettre"
+  act1_t: "La lettre de Tante Ada"
+  act1_d: "Vous héritez d'un cabinet de travail : ses tiroirs, son grand meuble, son copie-lettres vert. Et, dit la lettre, d'un commis."
+  act2_t: "Des billets sous la porte"
+  act2_d: "Hobbs ne frappe jamais. Chaque matin, ses billets glissent sous la porte, l'un après l'autre. La plupart ne font que regarder. Certains déplacent des choses. Quelques-uns effacent."
+  act3_t: "Le billet à l'encre plus sombre"
+  act3_d: "Celui-ci est court et poli, comme tous les autres. Votre plume est au-dessus de la ligne. Vous signez, ou vous ouvrez d'abord le livre ?"
+  story_letter: "Mon enfant, le cabinet est à vous. Je vous ai engagé un commis, Hobbs. Il est vif et plein de bonne volonté, mais il vous demandera de signer des billets que vous ne comprendrez pas. Ne signez jamais à l'aveugle. Le livre de cuir de Mme Finch est sur le bureau."
+  story_sign_line: "Signé"
+  story_sign: "Signer"
+  story_look: "Consulter le livre d'abord"
+  story_signed: "Signé. Les lettres à grand-mère et à la banque ont disparu. Pas de corbeille à papier, pas de miettes à balayer."
+  story_rewind: "Remonter le temps"
+  story_looked: "Un sceau de cire rouge. Vous barrez le billet et écrivez : seulement le tiroir build, s'il vous plaît. Hobbs acquiesce et va chercher un billet neuf."
+  story_read_page: "Lire la page"
+  game_eyebrow: "Le courrier du matin"
+  game_title: "Scellez les billets du matin"
+  game_lede: "Six billets attendent sur le bureau. Posez le bon sceau sur chacun avant le retour de Hobbs : la plume s'il ne fait que regarder, la tache d'encre s'il change des choses que l'on peut remettre, la cire rouge s'il peut faire perdre des choses pour de bon."
+  game_wrong: "Pas ce sceau-là. Relisez le billet."
+  game_stamp_ok: "Scellé"
+  game_stamp_late: "Deuxième essai"
+  game_all: "{n} sur {total} du premier coup. Mme Finch vous confierait le passe-partout."
+  game_most: "{n} sur {total} du premier coup. Ouvrez le livre pour retrouver ceux qui vous ont surpris."
+  game_few: "{n} sur {total} du premier coup. Hobbs aurait eu une matinée chargée. Le livre est là pour vous aider."
+  final_title: "Le gaz est allumé. Le premier billet est sur le bureau."
+  finder_btn: "Trouver une commande"
+  finder_ph: "Tapez une commande ou un objet : rm, gomme, push…"
+  finder_foot: "↑ ↓ pour choisir · Entrée pour ouvrir · Échap pour fermer · / partout pour chercher"
+  finder_suggest: "Pour commencer"
+  dock_continue: "Reprendre la lecture"
+  dock_start: "Le livre"
+  to_study: "Le cabinet"
+  tally_title: "Pages tamponnées"
+  act_word: "Acte"
+  finch_sig: "— Mme Finch"
+  act1_note: "Gardez le livre sur le bureau, pas sur l'étagère."
+  act2_note: "La plupart des billets sont sans danger. Apprenez à reconnaître les autres."
+  act3_note: "Lisez le sceau avant de signer."
+  title_page: "Page de titre"
+  title_kicker: "Un manuel domestique"
+  title_sub: "Un conte en onze chapitres, avec quatre-vingts planches gravées de la ligne de commande"
+  frontis_cap: "Frontispice. La lanterne qui éclaire chaque tiroir du cabinet."
+  imprint: "Le Cabinet · Imprimé pour la maison · MCM"
+  ex_libris: "Ex Libris"
+  bookplate_ph: "Écrivez votre nom"
+  bookplate_note: "Votre nom reste dans ce navigateur, comme vos tampons."
+  dedication: "À qui s'assiéra ensuite à ce bureau : le commis est vif, et l'encre n'attend pas. Lisez avant de signer."
+  cast_title: "La maisonnée"
+  cast_you: "Vous"
+  cast_you_d: "Le nouveau maître du cabinet, plume à la main."
+  cast_hobbs: "Hobbs"
+  cast_hobbs_d: "Le nouveau commis, un agent IA. Vif, infatigable, plein de bonne volonté."
+  cast_ada: "Tante Ada"
+  cast_ada_d: "Qui vous a laissé le cabinet, et une lettre."
+  cast_finch: "Mme Finch"
+  cast_finch_d: "La gouvernante qui a écrit ce livre et ses notes en marge."
+  howto_title: "Comment lire ce livre"
+  howto_1: "Chaque chapitre s'ouvre sur un conte. Chaque page qui suit explique une commande, avec une planche."
+  howto_2: "Chaque page porte un sceau : la plume ne fait que regarder, la tache d'encre change des choses, la cire rouge peut en faire perdre pour de bon."
+  howto_3: "Répondez à l'exercice en marge pour gagner un tampon. Tamponnez toutes les pages d'un chapitre et il est scellé à la cire."
+  begin: "Commencer par {title}"
+  language: Langue
+  plan_link: "Le plan de la maison"
+  plan_kicker: "Plié au début du livre"
+  plan_title: "Plan de la maison"
+  plan_intro: "Tante Ada vous a laissé toute la maison, des chambres jusqu'à la cave, et Hobbs vous en fera visiter chaque pièce. Choisissez un étage pour voir ses pièces. Chaque pièce abrite un chapitre. Cliquez sur une pièce pour lire son conte, et regardez ses pas vous suivre à mesure que vous gagnez vos tampons."
+  plan_here: "Vous êtes ici"
+  plan_door: "Porte d'entrée, vers la ville"
+  plan_hint: "Cliquez sur une pièce pour lire son conte."
+  plan_scale: "Échelle en pieds"
+  plan_rooms: "Les pièces, dans l'ordre où Hobbs les visite"
+  plan_see: "Voir cette pièce sur le plan de la maison"
+  room_1: "Le Cabinet"
+  room_2: "La Cuisine"
+  room_3: "Le Petit Salon"
+  room_4: "L'Office"
+  room_5: "La Salle de copie"
+  room_6: "Le Vestibule"
+  room_7: "La Bibliothèque"
+  room_8: "La Chambre de la gouvernante"
+  room_9: "L'Atelier"
+  room_10: "La Cave"
+  room_11: "L'Entrée de service"
+  sound_title: "Son : les bruits de la maison"
+  sound_on: "Activer les bruits de la maison"
+  sound_off: "Couper les bruits de la maison"
+  plan_stairs_upper: "Escalier vers le bas"
+  plan_stairs_ground: "Escalier vers le haut et le bas"
+  plan_stairs_below: "Escalier vers le haut"
+  plan_area: "Escalier de la courette, vers la rue"
+  floor_upper: "Premier étage"
+  floor_ground: "Rez-de-chaussée"
+  floor_below: "Sous-sol"
+  floors_label: "Les étages de la maison"
+  floor_count: "{rooms} pièces · {n} sur {total} tamponnées"
+  room_bedroom: "Chambres"
+  room_linen: "Lingerie"
+  room_dining: "Salle à manger"

@@ -1,0 +1,199 @@
+# Interface text for English, the book's source language.
+# Every other language copies this file to i18n/<code>/ui.yml and translates the values.
+name: English
+title_prefixes: ["The "]
+sections:            # page headings, in order; the build maps them back to these English keys
+  - In one line
+  - The picture
+  - What really happens
+  - Try it
+  - Margin notes
+  - When an agent asks
+  - Careful
+write_column: "| Write"
+off_world: []        # extra words that break the 1900 Study in this language (English ones live in the checker)
+chapters: {}         # chapter number -> translated title (English titles come from contents.yml)
+ui:
+  cover_aria: Book cover
+  book_title: "Never Sign Blind"
+  book_subtitle: "Mrs. Finch's guide to the slips your new clerk will bring you"
+  open_book: Open the book
+  summary_table: The summary table
+  continue_at: "Continue at {title}"
+  stamps_earned: "{n} of {total} stamps earned"
+  stamps_to_earn: "{total} pages · {total} stamps to earn"
+  open_book_aria: The open book
+  contents: Contents
+  back_to_page: Back to the page
+  close_book: Close the book
+  tally: "<b>{n}</b> of <b>{total}</b> pages stamped"
+  legend_aria: What the seals mean
+  legend_low: "Quill seal: only looks, nothing changes"
+  legend_medium: "Ink-blot seal: changes things you can put back"
+  legend_high: "Red wax seal: can lose things for good"
+  seal_low: Quill seal
+  seal_medium: Ink-blot seal
+  seal_high: Red wax seal
+  seal_note_low: Only looks. Nothing in the Study changes.
+  seal_note_medium: Changes things, but they can be put back.
+  seal_note_high: Can destroy or expose things for good.
+  chip_all: All
+  chip_low: Quill
+  chip_medium: Ink-blot
+  chip_high: Red wax
+  ch_short: Ch.
+  chapter: Chapter
+  chapter_sealed: Chapter sealed
+  missing_page: a page still to be written
+  at_a_glance: At a glance
+  summary_title: The Summary Table
+  summary_lede: "Every command in the book on one page: the object it becomes in the Study, what it does, and how careful to be when an agent asks to run it."
+  search_label: Look up a command or an object
+  search_placeholder: "rm, eraser, git…"
+  seal_filter_aria: Show by seal
+  col_write: Write
+  col_object: In the Study
+  col_does: What it does
+  col_seal: Seal
+  col_stamped: Stamped
+  count_all: "{n} commands in {chapters} chapters."
+  count_some: "{n} of {total} commands shown."
+  count_none: No command matches. Try another word.
+  for_practitioner: for the practitioner
+  plate: Plate
+  margin_exercise: Margin exercise
+  understood: Understood
+  see_also: "See also:"
+  turn: turn
+  turn_to: "Turn to {title}"
+  turn_page_aria: Turn the page
+  not_quite: Not quite. Read the picture again and try another answer.
+  chapter_done: "Chapter {num} is sealed. Every page understood."
+  stamped_toast: "Stamped. {n} of {total} pages understood."
+  untranslated: ""
+  cover_hint: Click the cover to open it
+  nav_plates: The plates
+  nav_seals: The seals
+  nav_shelf: Chapters
+  stat_commands: commands
+  stat_chapters: chapters
+  stat_languages: languages
+  plates_title: One engraving for every command
+  plates_lede: Each command becomes an object from a study around 1900. Hover a plate to read what it does, click to open its page.
+  seals_title: Three seals, three degrees of care
+  shelf_title: Nine volumes, from the drawer to the workshop
+  shelf_lede: Start with ls and cd, finish with make and docker. Pull a volume to open the book there.
+  os_eyebrow: Open source
+  os_title: Written with agents, kept in one hand
+  os_d: Most new pages are drafted by AI agents. House rules, a checker and written skills keep every page in the same study, the same tone and the same shape.
+  os_1: Every page checked against the same house rules
+  os_2: Every translation checked against its English page
+  os_3: One world only, a study around 1900, never a robot
+  os_check: "{n}/{n} pages follow the house rules."
+  footer_l: "Never Sign Blind · open source"
+  footer_r: Your progress stays in this browser.
+  tale_slips: Slips Hobbs brings in this chapter
+  nav_how: "The tale"
+  nav_game: "The game"
+  hero_eyebrow: "A tale in eleven chapters, and a manual of the command line"
+  hero_title: "A new clerk has moved into <em>your study.</em>"
+  hero_lede: "His name is Hobbs. He is quick, tireless and eager to please. All day he slides slips of paper across your desk, <code>ls</code>, <code>git push</code>, <code>rm -rf</code>, and waits for your signature. Mrs. Finch's leather book tells you what each one really does."
+  story_eyebrow: "The tale"
+  story_title: "It begins with a letter"
+  act1_t: "Aunt Ada's letter"
+  act1_d: "You have inherited a study: its drawers, its cabinet, its green copy book. And, the letter says, a clerk."
+  act2_t: "Slips under the door"
+  act2_d: "Hobbs never knocks. Every morning his slips slide under the door, one after another. Most of them only look around. Some move things. A few erase."
+  act3_t: "The slip in darker ink"
+  act3_d: "This one is short and polite, like all the others. Your pen is above the line. Do you sign it, or open the book first?"
+  story_letter: "My dear, the study is yours now. I have hired you a clerk, Hobbs. He is quick and means well, but he will ask you to sign slips you do not understand. Never sign blind. Mrs. Finch's leather book is on the desk."
+  story_sign_line: "Signed"
+  story_sign: "Sign it"
+  story_look: "Look it up first"
+  story_signed: "Signed. The letters to grandma and to the bank are gone. No wastebasket, no crumbs to sweep back."
+  story_rewind: "Turn back time"
+  story_looked: "A red wax seal. You cross out the slip and write: only the build drawer, please. Hobbs nods and fetches a fresh slip."
+  story_read_page: "Read the page"
+  game_eyebrow: "The morning post"
+  game_title: "Seal the morning's slips"
+  game_lede: "Six slips are waiting on the desk. Put the right seal on each before Hobbs comes back: Quill if it only looks, Ink-blot if it changes things you can put back, Red wax if it can lose things for good."
+  game_wrong: "Not that seal. Read the slip again."
+  game_stamp_ok: "Sealed"
+  game_stamp_late: "Second try"
+  game_all: "{n} of {total} at the first try. Mrs. Finch would trust you with the master key."
+  game_most: "{n} of {total} at the first try. Open the book to meet the ones that surprised you."
+  game_few: "{n} of {total} at the first try. Hobbs would have had a busy morning. The book is here to help."
+  final_title: "The gas is lit. The first slip is on the desk."
+  finder_btn: "Find a command"
+  finder_ph: "Type a command or an object: rm, eraser, push…"
+  finder_foot: "↑ ↓ to choose · Enter to open · Esc to close · press / anywhere to search"
+  finder_suggest: "Start here"
+  dock_continue: "Continue reading"
+  dock_start: "The book"
+  to_study: "The study"
+  tally_title: "Pages stamped"
+  act_word: "Act"
+  finch_sig: "— Mrs. Finch"
+  act1_note: "Keep the book on the desk, not on the shelf."
+  act2_note: "Most slips are harmless. Learn the few that are not."
+  act3_note: "Read the seal before you sign."
+  title_page: "Title page"
+  title_kicker: "A household manual"
+  title_sub: "A tale in eleven chapters, with eighty engraved plates of the command line"
+  frontis_cap: "Frontispiece. The lantern that lights every drawer of the Study."
+  imprint: "The Study · Printed for the household · MCM"
+  ex_libris: "Ex Libris"
+  bookplate_ph: "Write your name"
+  bookplate_note: "Your name stays in this browser, like your stamps."
+  dedication: "To whoever sits at this desk next: the clerk is quick, and the ink does not wait. Read before you sign."
+  cast_title: "The household"
+  cast_you: "You"
+  cast_you_d: "The new owner of the Study, pen in hand."
+  cast_hobbs: "Hobbs"
+  cast_hobbs_d: "The new clerk, an AI agent. Quick, tireless, eager to please."
+  cast_ada: "Aunt Ada"
+  cast_ada_d: "Who left you the Study, and a letter."
+  cast_finch: "Mrs. Finch"
+  cast_finch_d: "The housekeeper who wrote this book, and its margin notes."
+  howto_title: "How to read this book"
+  howto_1: "Each chapter opens with a tale. Each page after it explains one command, with a plate."
+  howto_2: "Every page carries a seal: Quill only looks, Ink-blot changes things, Red wax can lose things for good."
+  howto_3: "Answer the margin exercise to earn a stamp. Stamp every page of a chapter and it is sealed in wax."
+  begin: "Begin with {title}"
+  language: Language
+  plan_link: "The house plan"
+  plan_kicker: "Folded into the front of the book"
+  plan_title: "Plan of the House"
+  plan_intro: "Aunt Ada left you the whole house, from the bedrooms down to the cellar, and Hobbs will walk you through every room of it. Choose a floor to see its rooms. Each room holds one chapter. Click a room to read its tale, and watch his footsteps follow you as you earn your stamps."
+  plan_here: "You are here"
+  plan_door: "Front door, to the town"
+  plan_hint: "Click a room to read its tale."
+  plan_scale: "Scale of feet"
+  plan_rooms: "The rooms, in the order Hobbs visits them"
+  plan_see: "See this room on the house plan"
+  room_1: "The Study"
+  room_2: "The Kitchen"
+  room_3: "The Morning Room"
+  room_4: "The Servants' Hall"
+  room_5: "The Copying Room"
+  room_6: "The Entrance Hall"
+  room_7: "The Library"
+  room_8: "The Housekeeper's Room"
+  room_9: "The Workshop"
+  room_10: "The Cellar"
+  room_11: "The Tradesmen's Entrance"
+  sound_title: "Sound: the sounds of the house"
+  sound_on: "Turn the sounds of the house on"
+  sound_off: "Turn the sounds of the house off"
+  plan_stairs_upper: "Stairs down"
+  plan_stairs_ground: "Stairs up and down"
+  plan_stairs_below: "Stairs up"
+  plan_area: "Area steps, up to the street"
+  floor_upper: "First Floor"
+  floor_ground: "Ground Floor"
+  floor_below: "Below Stairs"
+  floors_label: "Floors of the house"
+  floor_count: "{rooms} rooms · {n} of {total} stamped"
+  room_bedroom: "Bedrooms"
+  room_linen: "Linen Room"
+  room_dining: "Dining Room"

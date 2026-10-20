@@ -1,0 +1,36 @@
+# The table of contents. The website draws its tree from this file.
+# A command listed here without a page yet shows as "a page still to be written".
+chapters:
+  - number: 1
+    title: Finding Your Way Around the Study
+    commands: [ls, cd, pwd, cat, mkdir, cp, mv, rm, grep, "|"]
+  - number: 2
+    title: Reading Closely
+    commands: [head, tail, wc, find, diff, less, jq, rg]
+  - number: 3
+    title: Writing and Tidying
+    commands: [echo, ">", touch, sed, tar, tee, mktemp]
+  - number: 4
+    title: Locks, Keys and Clerks
+    commands: [chmod, sudo, ps, kill, export, whoami, timeout]
+  - number: 5
+    title: The Letter-Copy Book
+    commands: [git status, git add, git commit, git log, git push, git show, git stash]
+  - number: 6
+    title: The Post Office
+    commands: [curl, ping, ssh, pip install, npm install, rsync, gh]
+  - number: 7
+    title: Drafts and Borrowed Books
+    commands: [git clone, git pull, git diff, git switch, git reset, git fetch, git merge, git rebase, git restore]
+  - number: 8
+    title: Housekeeping
+    commands: [sort, ln, du, df, which, uniq, cut]
+  - number: 9
+    title: The Workshop
+    commands: [make, python, xargs, crontab, docker run, npm run, pytest, node]
+  - number: 10
+    title: Slips in Red Ink
+    commands: ["curl | sh", git push --force, git clean, dd, printenv]
+  - number: 11
+    title: Forged Letters
+    commands: [source, eval, base64, npx, nc]
