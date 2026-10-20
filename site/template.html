@@ -152,6 +152,12 @@ body.on-landing { padding-block: 0 0; }
 .topnav a::after { content: ""; position: absolute; left: 0; right: 0; bottom: -4px; height: 1px; background: var(--gold); transform: scaleX(0); transform-origin: left; transition: transform .3s; }
 .topnav a:hover::after { transform: scaleX(1); }
 .topbar .langs { margin: 0; }
+/* The brand and the buttons keep their size; the links in between give way. A link that does not
+   fit wraps to a second row, which is clipped, so it disappears instead of running under a button. */
+.topbar .brand, .topbar-actions { flex: none; }
+.topbar .topnav { flex-wrap: wrap; align-content: flex-start; height: 28px; overflow: hidden; }
+.topbar .topnav a { line-height: 28px; }
+.topbar .topnav a::after { bottom: 3px; }
 
 .hero { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); align-items: center; gap: 40px; min-height: min(820px, calc(100vh - 70px)); padding: 20px 0 60px; }
 .eyebrow { font-family: var(--f-display); text-transform: uppercase; letter-spacing: .22em; font-size: var(--step--1); color: var(--gold); display: flex; align-items: center; gap: 12px; margin: 0 0 18px; }
@@ -285,6 +291,8 @@ body.on-landing { padding-block: 0 0; }
 .finale { text-align: center; padding: 130px 0 90px; }
 .finale h2 { font-family: var(--f-display); font-weight: 400; font-size: clamp(2.2rem, 5vw, 3.6rem); margin: 0 0 26px; color: #f6e9c9; }
 .lfoot { border-top: 1px solid rgba(201,162,74,.25); padding: 22px 0 30px; color: #a98d5c; font-size: var(--step--1); display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.lfoot a { color: #d9bf86; text-decoration: underline; text-decoration-color: rgba(201,162,74,.45); text-underline-offset: 3px; }
+.lfoot a:hover { color: var(--gold-hi); text-decoration-color: currentColor; }
 
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; min-height: 0; padding-top: 10px; }
@@ -311,7 +319,9 @@ body.on-landing { padding-block: 0 0; }
 .topbar-actions { display: flex; gap: 8px; align-items: center; }
 .icon-btn { display: inline-flex; align-items: center; gap: 8px; border: 1px solid rgba(201,162,74,.45); background: rgba(0,0,0,.15); color: var(--gold-hi); border-radius: 3px; padding: 7px 11px; font-size: var(--step--1); }
 .icon-btn:hover { background: rgba(201,162,74,.14); }
+a.icon-btn { text-decoration: none; }
 .icon-btn svg { width: 15px; height: 15px; }
+.gh-link svg { width: 16px; height: 16px; }
 .sound-btn svg { width: 17px; height: 17px; }
 .sound-btn .wave { display: none; }
 .sound-btn[aria-pressed="true"] .wave { display: inline; }
@@ -420,6 +430,7 @@ body.on-landing { padding-block: 0 0; }
   .book-bar .bar-btn kbd, .book-bar .bar-btn .lbl { display: none; }
 }
 @media (max-width: 480px) {
+  .topbar .gh-link { display: none; }
   .dock-text small { display: none; }
   .bar-progress span { display: none; }
 }
@@ -1389,6 +1400,7 @@ table.summary { width: 100%; border-collapse: collapse; font-size: .95rem; }
         <div class="langs" role="group" data-t-aria="language"></div>
         <button class="icon-btn sound-btn" type="button" data-sound aria-pressed="false" data-t-title="sound_title"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 8h3l4-3.5v11L6 12H3z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path class="wave" d="M13 7.5q1.6 2.5 0 5M15.4 5.5q3 4.5 0 9" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><path class="mute" d="M13.5 7.5l4 5M17.5 7.5l-4 5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></button>
         <button class="icon-btn" type="button" data-finder><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M13 13l4.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span class="lbl" data-t="finder_btn"></span><kbd>/</kbd></button>
+        <a class="icon-btn gh-link" href="https://github.com/LLejoly/cli-book" target="_blank" rel="noopener" data-t-title="source_title" data-t-aria="source_title"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
         <button class="btn-solid open-mini" type="button" data-open="resume" style="padding:.6em 1.1em" data-t="open_book"></button>
       </div>
     </div></header>
@@ -1550,7 +1562,7 @@ table.summary { width: 100%; border-collapse: collapse; font-size: .95rem; }
       <h2 data-t="final_title"></h2>
       <button class="btn-solid" type="button" data-open="first" data-t="open_book"></button>
     </section>
-    <footer class="lfoot wrap"><span data-t="footer_l"></span><span data-t="footer_r"></span></footer>
+    <footer class="lfoot wrap"><span data-t="footer_l"></span><a href="https://github.com/LLejoly/cli-book" target="_blank" rel="noopener" data-t="source_link"></a><span data-t="footer_r"></span></footer>
   </div>
 
   <section class="book" id="book" hidden data-t-aria="open_book_aria">

@@ -104,6 +104,8 @@ ui:
   os_check: "{n}/{n} pages suivent les règles de la maison."
   footer_l: "Ne signez jamais à l'aveugle · open source"
   footer_r: Votre progression reste dans ce navigateur.
+  source_link: Sources sur GitHub
+  source_title: "Les sources du livre sur GitHub"
   tale_slips: Les billets que Hobbs apporte dans ce chapitre
   nav_how: "Le conte"
   nav_game: "Le jeu"

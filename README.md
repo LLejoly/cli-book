@@ -2,6 +2,8 @@
 
 *Mrs. Finch's guide to the slips your new clerk will bring you.* A leather-bound manual of the command line, told as a tale.
 
+Source: <https://github.com/LLejoly/cli-book>
+
 A book about the terminal commands that AI agents ask you to run, written for
 people who have never opened a terminal and for people who use one every day.
 

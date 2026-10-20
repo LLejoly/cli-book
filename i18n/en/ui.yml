@@ -92,6 +92,8 @@ ui:
   os_check: "{n}/{n} pages follow the house rules."
   footer_l: "Never Sign Blind · open source"
   footer_r: Your progress stays in this browser.
+  source_link: Source on GitHub
+  source_title: "The book's source on GitHub"
   tale_slips: Slips Hobbs brings in this chapter
   nav_how: "The tale"
   nav_game: "The game"
