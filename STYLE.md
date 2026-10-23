@@ -285,7 +285,8 @@ tale's scenes inside its room or say where Hobbs walks to.
 
 ### Sounds
 
-The website has optional sound, off until the reader turns it on. Every sound is
+The website has sound, on by default from the reader's first click or key (browsers
+allow no sooner), until the reader turns it off. Every sound is
 synthesised in `site/template.html` (the `Sound` module), with no audio files, and
 belongs to the house around 1900: a page turning, a drawer sliding, a quill
 scratching, a wax seal pressed, a knock at the door, the gaslight's hiss, the

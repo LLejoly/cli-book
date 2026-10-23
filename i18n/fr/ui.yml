@@ -106,6 +106,18 @@ ui:
   footer_r: Votre progression reste dans ce navigateur.
   source_link: Sources sur GitHub
   source_title: "Les sources du livre sur GitHub"
+  credits_label: "Les auteurs de ce livre"
+  credit_author: "Auteur"
+  credit_author_d: "A écrit le conte et tient le livre."
+  credit_coauthor: "Co-auteur"
+  credit_coauthor_d: "Un agent IA. Un commis comme Hobbs, qui lit le règlement de la maison avant d'écrire une page."
+  about_btn: "En savoir plus sur l'auteur"
+  about_role: "Tech Lead GenAI."
+  about_path: "Ingénieur Data et IA, il est passé de data scientist à expert BI, ingénieur MLOps puis tech lead. Il construit des systèmes d'IA (modèles de langage, recherche documentaire, agents) où la sécurité, la gouvernance et la protection des données sont prévues dès le départ."
+  about_venture: "Il a fondé Pseudia, une entreprise belge qui pseudonymise les données, pour que des données réelles puissent servir aux tests, aux analyses et à l'IA sans exposer personne."
+  about_belief: "Sa conviction : la prochaine vague de l'IA se gagnera sur la confiance. Qui contrôle vos agents, et où vont vos données une fois dans un prompt ? C'est la question que ce livre pose à chaque billet."
+  about_site: "Son site"
+  about_close: "Fermer"
   tale_slips: Les billets que Hobbs apporte dans ce chapitre
   nav_how: "Le conte"
   nav_game: "Le jeu"

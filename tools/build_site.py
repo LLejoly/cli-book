@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 """Bind the pages into the book website.
 
-Reads contents.yml, pages/*.md, chapters/*.md (the tales), sketches/*.svg and the translations in i18n/, and writes:
+Reads contents.yml, pages/*.md, chapters/*.md (the tales), sketches/*.svg, the author's portraits in site/ and
+the translations in i18n/, and writes:
   dist/index.html      the complete website, open it in any browser
   dist/fragment.html   the same page without <html>/<head>, for hosts that add their own
 """
+import base64
 import html
 import json
 import re
@@ -131,7 +133,14 @@ def main():
             print(f"{ui['name']}: {done} of {len(english)} pages translated")
 
     data = json.dumps({"languages": codes, "books": books}, ensure_ascii=False).replace("</", "<\\/")
-    fragment = (ROOT / "site" / "template.html").read_text(encoding="utf-8").replace("/*BOOK_DATA*/null", data)
+    # The author's portraits (a small round thumbnail and a larger one for the note about him) are inlined
+    # so the site stays a single file.
+    def inline(name, kind):
+        return f"data:image/{kind};base64," + base64.b64encode((ROOT / "site" / name).read_bytes()).decode()
+    fragment = ((ROOT / "site" / "template.html").read_text(encoding="utf-8")
+                .replace("/*BOOK_DATA*/null", data)
+                .replace("/*AUTHOR_PORTRAIT*/", inline("author.png", "png"))
+                .replace("/*AUTHOR_FULL*/", inline("author-portrait.webp", "webp")))
     dist = ROOT / "dist"
     dist.mkdir(exist_ok=True)
     (dist / "fragment.html").write_text(fragment, encoding="utf-8")

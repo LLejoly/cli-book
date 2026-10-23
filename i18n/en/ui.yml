@@ -94,6 +94,18 @@ ui:
   footer_r: Your progress stays in this browser.
   source_link: Source on GitHub
   source_title: "The book's source on GitHub"
+  credits_label: "Who wrote this book"
+  credit_author: "Author"
+  credit_author_d: "Wrote the tale and keeps the book."
+  credit_coauthor: "Co-author"
+  credit_coauthor_d: "An AI agent. A clerk like Hobbs, who reads the house rules before he hands over a page."
+  about_btn: "More about the author"
+  about_role: "GenAI Tech Lead."
+  about_path: "A Data and AI engineer who went from data scientist to BI expert, MLOps engineer and tech lead. He builds AI systems (language models, retrieval, agents) with security, governance and data protection designed in from the start."
+  about_venture: "He founded Pseudia, a Belgian company that pseudonymises data, so real data can feed tests, analytics and AI without exposing people."
+  about_belief: "His conviction: the next wave of AI will be won on trust. Who controls your agents, and where does your data go once it is in a prompt? It is the same question this book asks about every slip."
+  about_site: "His website"
+  about_close: "Close"
   tale_slips: Slips Hobbs brings in this chapter
   nav_how: "The tale"
   nav_game: "The game"

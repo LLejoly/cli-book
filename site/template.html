@@ -1,5 +1,5 @@
 <title>Never Sign Blind</title>
-<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 26'%3E%3Crect x='3.5' y='1' width='19' height='24' rx='2' fill='%235b3421' stroke='%23c9a24a' stroke-width='1.4'/%3E%3Cpath d='M7.5 1v24' stroke='%23c9a24a' stroke-width='1.4'/%3E%3Cpath d='M11 9h8M11 12.5h6' stroke='%23f0d68a' stroke-width='1.4' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Courier+Prime:wght@400;700&display=swap">
@@ -293,6 +293,43 @@ body.on-landing { padding-block: 0 0; }
 .lfoot { border-top: 1px solid rgba(201,162,74,.25); padding: 22px 0 30px; color: #a98d5c; font-size: var(--step--1); display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
 .lfoot a { color: #d9bf86; text-decoration: underline; text-decoration-color: rgba(201,162,74,.45); text-underline-offset: 3px; }
 .lfoot a:hover { color: var(--gold-hi); text-decoration-color: currentColor; }
+/* Credits: who wrote the book, a small line above the footer. */
+.credits { display: flex; justify-content: center; gap: 18px 48px; flex-wrap: wrap; padding: 0 0 26px; margin: 0; }
+.credit { display: flex; align-items: center; gap: 14px; margin: 0; max-width: 400px; }
+.credit img, .credit-mark { width: 56px; height: 56px; border-radius: 50%; flex: none; border: 1px solid rgba(201,162,74,.6); box-shadow: 0 0 0 3px rgba(0,0,0,.25), 0 0 0 4px rgba(201,162,74,.25); }
+.credit img { object-fit: cover; background: radial-gradient(circle at 50% 35%, #f4ecd8, #cdb990); }
+.credit-mark { display: grid; place-items: center; background: radial-gradient(circle at 35% 30%, #4a2c1b, #24140b); color: var(--gold-hi); font-family: var(--f-display); font-style: italic; font-size: 1.7rem; }
+.credit figcaption { display: grid; line-height: 1.35; font-size: var(--step--1); color: #b99d68; }
+.credit small { font-size: .7rem; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); }
+.credit b { font-family: var(--f-display); font-weight: 400; font-style: italic; font-size: var(--step-1); color: #f6e9c9; }
+.credit b a { color: inherit; text-decoration: none; }
+.credit b a:hover { color: var(--gold-hi); }
+.credit-more { justify-self: start; margin-top: 4px; padding: 0; border: 0; background: none; font: inherit; color: var(--gold-hi); text-decoration: underline; text-decoration-color: rgba(201,162,74,.45); text-underline-offset: 3px; }
+.credit-more:hover { text-decoration-color: currentColor; }
+/* The note about the author: a framed card, his portrait on the left and the text on the right. */
+.about { width: min(800px, calc(100% - 32px)); max-height: calc(100% - 32px); padding: 0; border: 0; background: var(--paper); color: var(--ink); border-radius: 4px; overflow: auto; box-shadow: 0 40px 80px -30px rgba(0,0,0,.95), 0 0 0 1px var(--paper-dk), 0 0 0 7px rgba(91,52,33,.95), 0 0 0 8px rgba(201,162,74,.6); }
+.about[open] { display: grid; grid-template-columns: 280px minmax(0, 1fr); animation: cardIn .3s cubic-bezier(.2,.8,.2,1) both; }
+.about::backdrop { background: rgba(15,9,5,.62); backdrop-filter: blur(3px); -webkit-backdrop-filter: blur(3px); }
+.about-portrait { margin: 0; position: relative; display: flex; align-items: flex-end; justify-content: center; min-height: 340px; background: radial-gradient(ellipse at 50% 32%, #7a4a30, var(--leather) 58%, var(--leather-dk)); }
+.about-portrait::after { content: ""; position: absolute; inset: 9px; border: 1px solid rgba(201,162,74,.55); pointer-events: none; }
+.about-portrait img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 0; }
+.about-text { padding: 30px 34px 26px; font-size: var(--step--1); line-height: 1.6; }
+.about-text small { font-size: .7rem; letter-spacing: .14em; text-transform: uppercase; color: var(--sepia); }
+.about-text h3 { margin: 2px 0 10px; font-family: var(--f-display); font-weight: 400; font-style: italic; font-size: var(--step-2); line-height: 1.15; }
+.about-text p { margin: 0 0 10px; }
+.about-text .about-role { font-family: var(--f-display); font-style: italic; font-size: var(--step-0); color: var(--oxblood); }
+.about-text ul { list-style: none; display: flex; flex-wrap: wrap; gap: 8px 20px; margin: 16px 0 0; padding: 12px 0 0; border-top: 1px dashed var(--rule); }
+.about-text a { color: var(--ink); text-decoration: underline; text-decoration-color: var(--sepia); text-underline-offset: 3px; }
+.about-text a:hover { color: var(--oxblood); }
+.about-close { position: absolute; top: 10px; right: 10px; width: 32px; height: 32px; display: grid; place-items: center; padding: 0; border: 1px solid var(--rule); border-radius: 50%; background: var(--paper); color: var(--ink-soft); font-size: 1.1rem; line-height: 1; }
+.about-close:hover { color: var(--ink); background: var(--paper-dk); }
+@media (max-width: 640px) {
+  .about[open] { grid-template-columns: 1fr; }
+  .about-portrait { min-height: 0; height: 240px; }
+  .about-portrait img { width: auto; object-fit: contain; }
+  .about-text { padding: 22px 22px 20px; }
+}
+@media (prefers-reduced-motion: reduce) { .about[open] { animation: none; } }
 
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; min-height: 0; padding-top: 10px; }
@@ -310,6 +347,7 @@ body.on-landing { padding-block: 0 0; }
   .stage .cover-stamps { font-size: .7rem; letter-spacing: .05em; }
   .stage { min-height: 470px; }
   .stats { gap: 22px; }
+  .credits { justify-content: flex-start; }
 }
 
 /* ---------- Always within reach: dock, finder, book bar ---------- */
@@ -1562,6 +1600,28 @@ table.summary { width: 100%; border-collapse: collapse; font-size: .95rem; }
       <h2 data-t="final_title"></h2>
       <button class="btn-solid" type="button" data-open="first" data-t="open_book"></button>
     </section>
+    <aside class="credits wrap" data-t-aria="credits_label">
+      <figure class="credit"><img src="/*AUTHOR_PORTRAIT*/" alt="" width="56" height="56" loading="lazy"><figcaption><small data-t="credit_author"></small><b><a href="https://github.com/LLejoly" target="_blank" rel="noopener">Loïc Lejoly</a></b><span data-t="credit_author_d"></span><button class="credit-more" type="button" data-about aria-haspopup="dialog" aria-controls="about" data-t="about_btn"></button></figcaption></figure>
+      <figure class="credit"><span class="credit-mark" aria-hidden="true">J</span><figcaption><small data-t="credit_coauthor"></small><b><a href="https://www.jetbrains.com/junie/" target="_blank" rel="noopener">Junie</a></b><span data-t="credit_coauthor_d"></span></figcaption></figure>
+    </aside>
+    <dialog class="about" id="about" aria-labelledby="about-name">
+      <figure class="about-portrait"><img src="/*AUTHOR_FULL*/" alt="" width="360" height="425" loading="lazy"></figure>
+      <div class="about-text">
+        <small data-t="credit_author"></small>
+        <h3 id="about-name">Loïc Lejoly</h3>
+        <p class="about-role" data-t="about_role"></p>
+        <p data-t="about_path"></p>
+        <p data-t="about_venture"></p>
+        <p data-t="about_belief"></p>
+        <ul>
+          <li><a href="https://llejoly.github.io" target="_blank" rel="noopener" data-t="about_site"></a></li>
+          <li><a href="https://www.linkedin.com/in/loic-lejoly/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/LLejoly" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.pseudia.eu" target="_blank" rel="noopener">Pseudia</a></li>
+        </ul>
+      </div>
+      <button class="about-close" type="button" autofocus data-close-about data-t-aria="about_close" data-t-title="about_close">&times;</button>
+    </dialog>
     <footer class="lfoot wrap"><span data-t="footer_l"></span><a href="https://github.com/LLejoly/cli-book" target="_blank" rel="noopener" data-t="source_link"></a><span data-t="footer_r"></span></footer>
   </div>
 
@@ -1641,8 +1701,11 @@ const store = {
   read() { try { return JSON.parse(localStorage.getItem("leather-book") || "{}"); } catch { return {}; } },
   write(v) { try { localStorage.setItem("leather-book", JSON.stringify(v)); } catch {} },
 };
-const state = Object.assign({ bookmark: null, stamps: [], toggled: {}, view: null, sumRisk: "all", sumQuery: "", lang: null, reader: "", sound: false }, store.read());
-const save = () => store.write({ bookmark: state.bookmark, stamps: state.stamps, toggled: state.toggled, lang: state.lang, reader: state.reader, sound: state.sound });
+// Only a sound setting the reader chose is kept; older visits saved the old default (off) without asking.
+const saved = store.read();
+if (!saved.soundChosen) delete saved.sound;
+const state = Object.assign({ bookmark: null, stamps: [], toggled: {}, view: null, sumRisk: "all", sumQuery: "", lang: null, reader: "", sound: true, soundChosen: false }, saved);
+const save = () => store.write({ bookmark: state.bookmark, stamps: state.stamps, toggled: state.toggled, lang: state.lang, reader: state.reader, sound: state.sound, soundChosen: state.soundChosen });
 const reducedMotion = () => matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 const $ = id => document.getElementById(id);
@@ -1652,7 +1715,7 @@ const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;",
 
 // ---------- The sounds of the house ----------
 // Everything is synthesised with the Web Audio API, so the page needs no sound files.
-// Sound starts off; the reader turns it on with the gramophone button, and the choice is remembered.
+// Sound starts on; the reader can turn it off with the gramophone button, and the choice is remembered.
 const Sound = (() => {
   let ctx = null, master = null, noise = null, ambient = null, tickTimer = null, crackleTimer = null, lastChime = null;
   const on = () => state.sound && ctx;
@@ -1729,14 +1792,21 @@ const Sound = (() => {
     document.querySelectorAll("[data-sound]").forEach(b => { b.setAttribute("aria-pressed", String(v)); b.setAttribute("aria-label", t(v ? "sound_off" : "sound_on")); });
     if (v) { init(); startAmbient(); play("chime"); } else stopAmbient();
   }
-  // Browsers only let sound start after a click or a key, so a remembered "on" waits for the first one.
+  // Browsers only let sound start after a click or a key, so "on" waits for the first one.
+  // A tap only counts once the finger lifts, so every kind of press is listened for until the sound runs.
+  const WAKE = ["pointerdown", "pointerup", "click", "keydown"];
+  let waking = null;
   function sync() {
     document.querySelectorAll("[data-sound]").forEach(b => { b.setAttribute("aria-pressed", String(state.sound)); b.setAttribute("aria-label", t(state.sound ? "sound_off" : "sound_on")); });
-    if (!state.sound || ctx) return;
-    const wake = e => { if (e.target.closest && e.target.closest("[data-sound]")) return; removeEventListener("pointerdown", wake, true); removeEventListener("keydown", wake, true); if (state.sound) { init(); startAmbient(); } };
-    addEventListener("pointerdown", wake, true); addEventListener("keydown", wake, true);
+    if (!state.sound || waking || (ctx && ctx.state === "running")) return;
+    waking = e => {
+      if (e.target.closest && e.target.closest("[data-sound]")) return;
+      if (state.sound) { init(); startAmbient(); }
+      if (!state.sound || (ctx && ctx.state === "running") || !ctx) { WAKE.forEach(n => removeEventListener(n, waking, true)); waking = null; }
+    };
+    WAKE.forEach(n => addEventListener(n, waking, true));
   }
-  return { play, setOn, strike, sync, toggle: () => setOn(!state.sound) };
+  return { play, setOn, strike, sync, toggle: () => { state.soundChosen = true; setOn(!state.sound); } };
 })();
 
 // Small live details: the pocket watch keeps the reader's own time, Aunt Ada's
@@ -2549,6 +2619,8 @@ document.addEventListener("click", e => {
     return;
   }
   if (b.hasAttribute("data-sound")) return Sound.toggle();
+  if (b.hasAttribute("data-about")) { $("about").showModal(); return Sound.play("slide"); }
+  if (b.hasAttribute("data-close-about")) return $("about").close();
   if (b.dataset.floor) return setFloor(b.dataset.floor);
   if (b.hasAttribute("data-finder")) { Sound.play("drawer"); return openFinder(); }
   if (b.hasAttribute("data-reach")) return chooseFinder(b.dataset.reach);
@@ -2596,9 +2668,12 @@ document.addEventListener("click", e => {
   if (row) go(row.dataset.row);
 });
 document.addEventListener("click", e => { if (e.target.closest("[data-close-finder]")) closeFinder(); });
+// A click on the dimmed page around the note about the author closes it.
+$("about").addEventListener("click", e => { if (e.target === $("about")) $("about").close(); });
 addEventListener("scroll", onScroll, { passive: true });
 document.addEventListener("keydown", e => {
   const typing = e.target.closest("input, textarea");
+  if ($("about").open) return;
   if (!$("finder").hidden) {
     e.stopImmediatePropagation();
     if (e.key === "Escape") { e.preventDefault(); return closeFinder(); }
