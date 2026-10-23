@@ -23,9 +23,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v7
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
           cache: pip
@@ -45,7 +45,7 @@ jobs:
           cp dist/index.html _site/index.html
           touch _site/.nojekyll
 
-      - uses: actions/upload-pages-artifact@v5
+      - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
           include-hidden-files: true
@@ -60,7 +60,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
-        uses: actions/deploy-pages@v5
+        uses: actions/deploy-pages@v4
         env:
           # deploy-pages bundles a library that still loads Node's deprecated `punycode`
           # module (actions/deploy-pages#413). Silence only that warning, nothing else.
