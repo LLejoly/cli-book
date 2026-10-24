@@ -29,15 +29,6 @@ python3 tools/build_site.py    # writes dist/index.html
 
 Open `dist/index.html` in a browser. Nothing else is needed: no server, no build tools.
 
-## Publish on GitHub Pages
-
-`.github/workflows/pages.yml` checks every page, binds the book and publishes it
-each time `main` changes. Pull requests are checked and built but not published.
-
-Once, in the repository on GitHub: **Settings › Pages › Build and deployment ›
-Source: GitHub Actions**. The next push to `main` (or **Actions › Publish the
-book › Run workflow**) puts the book at `https://<user>.github.io/<repository>/`.
-
 ## How the book is organised
 
 | Path                     | What it holds                                              |
